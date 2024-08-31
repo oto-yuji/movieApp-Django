@@ -140,6 +140,7 @@ SUPERUSER_NAME = env('SUPERUSER_NAME')
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",
+    "https://django-render.onrender.com",
 ]
 
 # 必要に応じて、追加の設定を行う
@@ -163,6 +164,8 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://django-render.onrender.com']
 
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES': [
