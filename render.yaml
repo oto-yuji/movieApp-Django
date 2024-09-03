@@ -10,7 +10,7 @@ services:
     name: django_render
     env: python
     region: singapore
-    buildCommand: './build.sh'
+    buildCommand: './build.sh && python manage.py migrate && python manage.py loaddata initial_data.json'
     startCommand: 'gunicorn movieApp.wsgi:application'
     plan: free
     branch: main
