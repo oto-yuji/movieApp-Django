@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG', default=True)
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django-render-1ra5.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django-render-1ra5.onrender.com', 'vite-test-one-xi.vercel.app']
 
 
 # Application definition
@@ -140,7 +140,8 @@ SUPERUSER_NAME = env('SUPERUSER_NAME')
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",
-    "https://django-render.onrender.com",
+    "https://django-render-1ra5.onrender.com",
+    "https://vite-test-one-xi.vercel.app",
 ]
 
 # 必要に応じて、追加の設定を行う
@@ -165,7 +166,7 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://django-render.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://django-render-1ra5.onrender.com', 'https://vite-test-one-xi.vercel.app']
 
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES': [
